@@ -1,0 +1,6 @@
+[
+{
+  "directory": "/home/yaojie/workspace/code/LearnNetworkProgramming",
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-g", "-O0", "-Iinclude", "-o", "build/.objs/hello_server/linux/x86_64/debug/src/hello_server.c.o", "src/hello_server.c"],
+  "file": "src/hello_server.c"
+}]
