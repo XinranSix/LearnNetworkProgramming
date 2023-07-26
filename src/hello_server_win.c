@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #include <winsock2.h>
 
 void ErrorHandling(char *message);
@@ -28,7 +27,7 @@ int main(int argc, char *argv[]) {
     }
 
     memset(&servAddr, 0, sizeof(servAddr));
-    servAddr.sin_family == AF_INET;
+    servAddr.sin_family = AF_INET;
     servAddr.sin_addr.s_addr = htonl(INADDR_ANY);
     servAddr.sin_port = htons(atoi(argv[1]));
 
@@ -43,7 +42,14 @@ int main(int argc, char *argv[]) {
 
     szClntAddr = sizeof(clntAddr);
     hClntSock = accept(hServSock, (SOCKADDR *)&clntAddr, &szClntAddr);
-    
+    if (hClntSock == INVALID_SOCKET) {
+        ErrorHandling("accept() error");
+    }
+
+    send(hClntSock, message, sizeof(message), 0);
+    closesocket(hClntSock);
+    closesocket(hServSock);
+    WSACleanup();
 
     return 0;
 }
