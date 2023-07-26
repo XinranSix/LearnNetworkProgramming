@@ -1,8 +1,8 @@
 [
 {
   "directory": "/home/yaojie/workspace/code/LearnNetworkProgramming",
-  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-g", "-O0", "-o", "build/.objs/low_open/linux/x86_64/debug/tmp/src/low_open.c.o", "tmp/src/low_open.c"],
-  "file": "tmp/src/low_open.c"
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-g", "-O0", "-o", "build/.objs/fd_seri/linux/x86_64/debug/src/fd_seri.c.o", "src/fd_seri.c"],
+  "file": "src/fd_seri.c"
 },
 {
   "directory": "/home/yaojie/workspace/code/LearnNetworkProgramming",
@@ -11,18 +11,13 @@
 },
 {
   "directory": "/home/yaojie/workspace/code/LearnNetworkProgramming",
-  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-g", "-O0", "-o", "build/.objs/hello_server/linux/x86_64/debug/tmp/src/hello_server.c.o", "tmp/src/hello_server.c"],
-  "file": "tmp/src/hello_server.c"
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-g", "-O0", "-o", "build/.objs/low_read/linux/x86_64/debug/src/low_read.c.o", "src/low_read.c"],
+  "file": "src/low_read.c"
 },
 {
   "directory": "/home/yaojie/workspace/code/LearnNetworkProgramming",
   "arguments": ["/usr/bin/gcc", "-c", "-m64", "-g", "-O0", "-o", "build/.objs/hello_server/linux/x86_64/debug/src/hello_server.c.o", "src/hello_server.c"],
   "file": "src/hello_server.c"
-},
-{
-  "directory": "/home/yaojie/workspace/code/LearnNetworkProgramming",
-  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-g", "-O0", "-o", "build/.objs/hello_client/linux/x86_64/debug/tmp/src/hello_client.c.o", "tmp/src/hello_client.c"],
-  "file": "tmp/src/hello_client.c"
 },
 {
   "directory": "/home/yaojie/workspace/code/LearnNetworkProgramming",
