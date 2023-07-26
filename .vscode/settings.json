@@ -52,6 +52,7 @@
         "streambuf": "cpp",
         "typeinfo": "cpp",
         "assert.h": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "unistd.h": "c"
     }
 }
