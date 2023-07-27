@@ -41,7 +41,20 @@ int main(int argc, char *argv[]) {
         puts("Connected...");
     }
 
-    
+    while (1) {
+        fputs("Input message(Q to quit): ", stdout);
+        fgets(message, BUF_SIZE, stdin);
+
+        if (!strcmp(message, "q\n") || !strcmp(message, "Q\n")) {
+            break;
+        }
+        send(hSocket, message, strlen(message), 0);
+        strLen = recv(hSocket, message, BUF_SIZE - 1, 0);
+        message[strLen] = 0;
+        printf("Message from server: %s", message);
+    }
+    closesocket(hSocket);
+    WSACleanup();
 
     return 0;
 }
