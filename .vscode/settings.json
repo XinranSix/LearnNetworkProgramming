@@ -54,6 +54,7 @@
         "assert.h": "c",
         "stdio.h": "c",
         "unistd.h": "c",
-        "socket.h": "c"
+        "socket.h": "c",
+        "fcntl.h": "c"
     }
 }
